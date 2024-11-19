@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hwb(298 50% 30%);
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+    display: flex;
+    height: 100vh;
+    
+
+}
+#container{
+    width: 40%;
+    height: 75%;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* box-shadow: 10px 20px 10px rgb(80, 69, 69),
+    inset -8px -8px -12px rgb(71, 71, 193); */
+    /* background-color: #f23c39; */
+    box-shadow: inset 8px 8px 8px rgb(255, 255, 255,0.3),
+    inset -8px -8px 8px rgb(0, 0, 0,0.25);
+    background: linear-gradient(rgb(185, 230, 238),rgb(33, 106, 254));
+}
+
+.popit{
+    box-shadow: 12px 12px 16px 0 rgba(184, 154, 154, 0.25),-8px -8px 12px 0 rgb(255, 255, 255,0.3);
+    width: 425px;
+    height: 425px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    
+}
+
+
+.pieces{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.circle{
+    cursor: pointer;
+    width: 14vw;
+    height: 14vw;
+    max-width: 65px;
+    max-height: 65px;
+    margin: 3px;
+    border-radius: 50%;
+    transition: 0.5s;
+    box-shadow: inset 8px 8px 8px rgb(255, 255, 255,0.3),
+    inset -8px -8px 8px rgb(0, 0, 0,0.25);
+    -webkit-tap-highlight-color: rgb(255, 255, 255,0);
+}
+.pressed {
+    box-shadow: inset 8px 8px 8px rgb(0, 0, 0,0.25),
+    inset -8px -8px 8px rgb(255, 255, 255,0.3);
+}
+.r{
+    background-color: #f23c39;
+
+}
+.o{
+    background-color: #b8f17b;
+
+}
+.s{
+    background-color: #fcf620;
+
+}
+.t{
+    background-color: #69d437;
+
+}
+.u{
+    background-color: #3cc1f6;
+
+}
+.v{
+    background-color: #fb8f17;
+
+}
+#popup-message {
+    display: none; /* जब तक गेम खत्म न हो, इसे छुपा कर रखें */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    font-size: 1.5rem;
+    z-index: 1000;
+}
+
+
+@media (max-width: 480px) { /* मोबाइल के लिए */
+    h1 {
+        font-size:2px; /* और छोटा फॉन्ट साइज */
+        margin-top: 5px;
+    }
+    .circle {
+        width: 20vw;
+        height: 20vw;
+        max-width: 40px;
+        max-height: 40px;
+    }
+    #container {
+        width: 70%;
+        height: 65%;
+    }
+}

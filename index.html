@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop it Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="position: absolute; top: 0; left: 50%; transform: translateX(-50%); margin-top: 10px; color: #100d0d; font-size:40px; text-align: center;">
+        "Pop it Game"
+    </h1>
+    <div id="container">
+        <div id="popit" class="popit">
+            <div class="pieces r">
+                <div class="circle r"></div>
+                <div class="circle r"></div>
+                <div class="circle r"></div>
+            </div>
+            <div class="pieces o">
+                <div class="circle o"></div>
+                <div class="circle o"></div>
+                <div class="circle o"></div>
+                <div class="circle o"></div>
+                <div class="circle o"></div>
+            </div>
+            <div class="pieces s">
+                <div class="circle s"></div>
+                <div class="circle s"></div>
+                <div class="circle s"></div>
+                <div class="circle s"></div>
+                <div class="circle s"></div>
+                <div class="circle s"></div>
+            </div>
+            <div class="pieces t">
+                <div class="circle t"></div>
+                <div class="circle t"></div>
+                <div class="circle t"></div>
+                <div class="circle t"></div>
+                <div class="circle t"></div>
+                <div class="circle t"></div>
+            </div>
+            <div class="pieces u">
+                <div class="circle u"></div>
+                <div class="circle u"></div>
+                <div class="circle u"></div>
+                <div class="circle u"></div>
+                <div class="circle u"></div>
+            </div>
+            <div class="pieces v">
+                <div class="circle v"></div>
+                <div class="circle v"></div>
+                <div class="circle v"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Overlay -->
+    <div id="popup-overlay"></div>
+    <div id="popup-message">
+        🎉 Congratulations! You've won the game! 🎉
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
